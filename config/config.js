@@ -10,9 +10,9 @@ const config = {
   },
   PRODUCTION: {
     mongo: {
-      url: process.env.MONGO_DB_URI,
-      username: 'abc',
-      password: 'abc@123',
+      url:
+        process.env.MONGO_DB_URI
+        || 'mongodb://milkysingh:smallcase123@ds235053.mlab.com:35053/smallcase',
     },
   },
 };
